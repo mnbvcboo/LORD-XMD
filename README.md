@@ -17,7 +17,7 @@
 
 
 
- <details close>
+
 <summary>🔹️⚕ DEPLOY BOT ON 🔸️</summary>
 	 
 --------	 
