@@ -1,12 +1,16 @@
-----
+<!-- RAINBOW LINE BOT -->
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
 </p> <p align="center">
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Rubik+Dirt&size=65&pause=1000&color=F62C3F&background=FF20A500&center=true&vCenter=true&width=1000&height=150&lines=LORD-XMD;MADE+BY+MALVIN+KING" alt="Typing SVG" /></a>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Rubik+Dirt&size=65&pause=1000&color=F92C43F&background=FF20A500&center=true&vCenter=true&width=1000&height=150&lines=LORD-XMD;MADE+BY+MALVIN+KING" alt="Typing SVG" /></a>
 
 ----
 <p align = center>   <img src="https://files.catbox.moe/ug2x1y.jpg"</p>
 <p align="center">
 
------
+<!-- RAINBOW LINE BOT -->
+<img src="https://github.com/AnderMendoza/AnderMendoza/raw/main/assets/line-neon.gif" width="100%">
+
 
 **How to deploy**
 
