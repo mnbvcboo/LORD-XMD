@@ -27,7 +27,7 @@
 **3. Use borrowed session If the above not working**
 
 <p align="left">
-<a href='https://queen-iahu-pair-43af5d9cec43.herokuapp.com/' target="_blank"><img alt='Pair Code' src='https://img.shields.io/badge/-Pair Code-darkblue?style=for-the-badge&logo=Whatsapp&logoColor=white'/< width=115 height=28/p></a>
+<a href='https://seon-md-pair-ff9b3759e9a3.herokuapp.com/' target="_blank"><img alt='Pair Code' src='https://img.shields.io/badge/-Pair Code-darkblue?style=for-the-badge&logo=Whatsapp&logoColor=white'/< width=115 height=28/p></a>
 
 
 
