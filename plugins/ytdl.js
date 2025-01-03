@@ -1,7 +1,6 @@
 
 
 
-
 const {
   cmd,
   commands
@@ -89,7 +88,7 @@ cmd({
   'pattern': "song",
   'alias': "play",
   'desc': "To download songs.",
-  'react': '☃️',
+  'react': '🔎',
   'category': "download",
   'filename': __filename
 }, async (_0x5351f6, _0x1439a7, _0x278458, {
@@ -118,7 +117,7 @@ cmd({
 }) => {
   try {
     if (!_0x380df9) {
-      return _0x233cc6("Please give me a URL or title.");
+      return _0x233cc6("Please give me a URL or title. Eg .play Lily By Alan Walker");
     }
     _0x380df9 = convertYouTubeLink(_0x380df9);
     const _0x54cf3a = await yts(_0x380df9);
@@ -128,10 +127,12 @@ cmd({
       'image': {
         'url': _0x20e1e8.thumbnail
       },
-      'caption': "\n`❄️🅻🅾🆁🅳 - 🆇🅼🅳❄️`\n\n ─┄┈┈┉┉┉┅┅┅┅┅─┄┅┅┅┅┅┅┅┅┅\n*⟣ ʟᴏʀᴅ xᴍᴅ sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ⟢*\n┅┅┅┅┅┅┅┄┄┄┄┄┄┄┄┅┅┅┅┅┅┅┅┅┅\n-  *ᴏᴜʀ ᴄʜᴀɴɴᴇʟ*\n\n*https://whatsapp.com/channel/0029VayTeumIN9io4KVkqx28*\n┅┅┅┄┄┄┄┄┄─────┉┉┉┉┉┉┉┉┉┉\n\n> ℹ️ ʀᴇᴘʟʏ ʙᴇʟᴏᴡ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ғᴏʀᴍᴀᴛ\n\n*1   ┃ ᴀᴜᴅɪᴏ sᴏɴɢ🎵*\n*2   ┃  ᴅᴏᴄᴜᴍᴇɴᴛ sᴏɴɢ🗂️*\n\n> © 2025 || ʟᴏʀᴅ xᴍᴅ\n"
+      'caption': "\n``❄️🅻🅾🆁🅳 - 🆇🅼🅳❄️`\n\n ─┄┈┈┉┉┉┅┅┅┅┅─┄┅┅┅┅┅┅┅┅┅\n*⟣ ʟᴏʀᴅ xᴍᴅ sᴏɴɢ ᴅᴏᴡɴʟᴏᴀᴅᴇʀ⟢*\n┅┅┅┅┅┅┅┄┄┄┄┄┄┄┄┅┅┅┅┅┅┅┅┅┅\n-  *ᴏᴜʀ ᴄʜᴀɴɴᴇʟ*\n\n*https://whatsapp.com/channel/0029VayTeumIN9io4KVkqx28*\n┅┅┅┄┄┄┄┄┄─────┉┉┉┉┉┉┉┉┉┉\n\n> ℹ️ ʀᴇᴘʟʏ ʙᴇʟᴏᴡ ᴛʜᴇ ɴᴜᴍʙᴇʀ ᴛᴏ ᴅᴏᴡɴʟᴏᴀᴅ ғᴏʀᴍᴀᴛ\n\n*1   ┃ ᴀᴜᴅɪᴏ sᴏɴɢ🎵*\n*2   ┃  ᴅᴏᴄᴜᴍᴇɴᴛ sᴏɴɢ🗂️*\n\n> © 2025 • ʟᴏʀᴅ xᴍᴅ \n"
     }, {
       'quoted': _0x1439a7
     });
+      
+
     const _0x164ac6 = _0x166c67.key.id;
     _0x5351f6.ev.on("messages.upsert", async _0x11c496 => {
       const _0x25ddf5 = _0x11c496.messages[0x0];
@@ -148,7 +149,7 @@ cmd({
             'key': _0x25ddf5.key
           }
         });
-        const _0x1cc9d0 = await fetchJson('https://api.davidcyriltech.my.id/download/ytmp3?url=' + _0x5ed25e);
+        const _0x1cc9d0 = await fetchJson('https://api.giftedtech.my.id/api/download/dlmp3?apikey=gifted&url=' + _0x5ed25e);//https://api.giftedtech.my.id/api/download/dlmp3q?apikey=gifted&quality=128&url= //https://api.giftedtech.my.id/api/download/ytmp3v2?apikey=gifted&url=https://youtu.be/qHDJSRlNhVs?feature=shared // https://api.giftedtech.my.id/api/download/ytmp3v2?apikey=gifted&url=
         const _0x5741ec = _0x1cc9d0.result.download_url;
         await _0x5351f6.sendMessage(_0x3277a3, {
           'delete': _0x166c67.key
@@ -192,7 +193,7 @@ cmd({
             },
             'mimetype': "audio/mp3",
             'fileName': _0x20e1e8.title + ".mp3",
-            'caption': "\n> *© Gᴇɴᴇʀᴀᴛᴇᴅ Bʏ ʟᴏʀᴅ xᴍᴅ ❤️*\n "
+            'caption': "\n> *© Gᴇɴᴇʀᴀᴛᴇᴅ Bʏ ʟᴏʀᴅ xᴍᴅ*\n "
           }, {
             'quoted': _0x25ddf5
           });
@@ -288,7 +289,7 @@ cmd({
             'video': {
               'url': _0x404514
             },
-            'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ*\n"
+            'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ🌟*\n"
           }, {
             'quoted': _0x3dce21
           });
@@ -314,7 +315,7 @@ cmd({
               'video': {
                 'url': _0x13f213
               },
-              'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ*\n"
+              'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ🌟*\n"
             }, {
               'quoted': _0x3dce21
             });
@@ -340,7 +341,7 @@ cmd({
                 'video': {
                   'url': _0x3e40d4
                 },
-                'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ*\n"
+                'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ🌟*\n"
               }, {
                 'quoted': _0x3dce21
               });
@@ -366,7 +367,7 @@ cmd({
                   'video': {
                     'url': _0x14529b
                   },
-                  'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ*\n"
+                  'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ🌟*\n"
                 }, {
                   'quoted': _0x3dce21
                 });
@@ -394,7 +395,7 @@ cmd({
                     },
                     'mimetype': "video/mp4",
                     'fileName': _0x546126.title + ".mp4",
-                    'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ*\n"
+                    'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ🌟*\n"
                   }, {
                     'quoted': _0x3dce21
                   });
@@ -422,7 +423,7 @@ cmd({
                       },
                       'mimetype': "video/mp4",
                       'fileName': _0x546126.title + ".mp4",
-                      'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ*\n"
+                      'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ🌟*\n"
                     }, {
                       'quoted': _0x3dce21
                     });
@@ -450,7 +451,7 @@ cmd({
                         },
                         'mimetype': "video/mp4",
                         'fileName': _0x546126.title + ".mp4",
-                        'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ*\n"
+                        'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ🌟*\n"
                       }, {
                         'quoted': _0x3dce21
                       });
@@ -478,7 +479,7 @@ cmd({
                           },
                           'mimetype': "video/mp4",
                           'fileName': _0x546126.title + ".mp4",
-                          'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅ xᴍᴅ🌟*\n"
+                          'caption': "\n*🌟Gᴇɴᴇʀᴀᴛᴇᴅ 4 Yᴏᴜ Bʏ ʟᴏʀᴅx🌟*\n"
                         }, {
                           'quoted': _0x3dce21
                         });

@@ -39,6 +39,6 @@ const wordInfo = `
                                  if (e.response && e.response.status === 404) {
                                      return reply("🚫 Word not found. Please check the spelling and try again.");
                                  }
-                                 return reply("⚠️ An error occurred while fetching the definition. Please try again later.");
+                                 return reply("❗ An error occurred while fetching the definition. Please try again later❓️.");
                              }
                          });
